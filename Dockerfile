@@ -4,7 +4,7 @@ WORKDIR /node-app
 COPY ./package.json ./
 RUN npm install
 COPY ./ ./
-RUN npm run start
+RUN npm run build
 
 # FROM node:10.5.0
 # RUN mkdir /node-app
